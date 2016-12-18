@@ -16,7 +16,7 @@ if [[ $- != *i* ]] ; then
 # Shell is non-interactive. Be done now!
 return
 fi
- 
+
 # Bash completion
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
@@ -34,3 +34,7 @@ fi
 # Print some nice fortune text
 fortune
 echo
+
+
+#Set Editor to emacsclient
+export EDITOR=~/.config/autostart-scripts/emacsandclient.sh
