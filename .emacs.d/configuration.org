@@ -5,7 +5,7 @@
 #+END_SRC
 
 * Set personal information
-
+I Got the idea from [[https://github.com/hrs/dotfiles][Harry R. Schwartzs config file]] 
 #+BEGIN_SRC emacs-lisp
   (setq user-full-name "Ali Mehmandoost"
         user-mail-address "ali.mehmandoost@gmail.com"
@@ -17,7 +17,6 @@
 
 * repository list
 I use =[[https://melpa.org][MELPA]]=.
-
 #+BEGIN_SRC emacs-lisp
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
@@ -77,7 +76,6 @@ I don't usually use the menu or scroll bar, and they take up useful space.
 #+BEGIN_SRC emacs-lisp
  (if (daemonp)
     (add-hook 'after-make-frame-functions #'load-my-theme)
-    (load-my-theme t)
 )
 #+END_SRC
 
@@ -252,7 +250,7 @@ nil are ignored."
 #+END_SRC
 
   
-  
+
 * CPP IDE
 ** Source code navigation
 *** gtags
