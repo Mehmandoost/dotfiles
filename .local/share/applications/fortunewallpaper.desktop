@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Fortune Wallpaper
+GenericName=Fortune Wallpaper
+Comment=Fortune text as wallpaper
+Exec=/home/ali/.config/autostart-scripts/fortunewallpaper.sh
+Terminal=false
+Hidden=false
+
