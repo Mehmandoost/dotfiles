@@ -5,7 +5,7 @@
 #+END_SRC
 
 * Set personal information
-I Got the idea from [[https://github.com/hrs/dotfiles][Harry R. Schwartzs config file]] 
+
 #+BEGIN_SRC emacs-lisp
   (setq user-full-name "Ali Mehmandoost"
         user-mail-address "ali.mehmandoost@gmail.com"
@@ -17,6 +17,7 @@ I Got the idea from [[https://github.com/hrs/dotfiles][Harry R. Schwartzs config
 
 * repository list
 I use =[[https://melpa.org][MELPA]]=.
+
 #+BEGIN_SRC emacs-lisp
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
@@ -49,25 +50,13 @@ I don't usually use the menu or scroll bar, and they take up useful space.
 ** Custom solarized-dark theme
 #+BEGIN_SRC emacs-lisp
 (when window-system
- (setq solarized-use-variable-pitch nil)
- (setq solarized-height-plus-1 1.0)
- (setq solarized-height-plus-2 1.0)
- (setq solarized-height-plus-3 1.0)
- (setq solarized-height-plus-4 1.0)
- (setq solarized-high-contrast-mode-line t)
- (load-theme 'solarized-dark t)
+ (load-theme 'spacemacs-dark t)
  (transparency 90)
 )
 
 (defun load-my-theme (frame)
   (select-frame frame)
-    (setq solarized-use-variable-pitch nil)
-    (setq solarized-height-plus-1 1.0)
-    (setq solarized-height-plus-2 1.0)
-    (setq solarized-height-plus-3 1.0)
-    (setq solarized-height-plus-4 1.0)
-    (setq solarized-high-contrast-mode-line t)
-    (load-theme 'solarized-dark t)
+    (load-theme 'spacemacs-dark t)
     (transparency 90)
 )
 #+END_SRC
@@ -250,8 +239,8 @@ nil are ignored."
 #+END_SRC
 
   
-
-* CPP IDE
+  
+* CPP IDE 
 ** Source code navigation
 *** gtags
 Install [[https://github.com/leoliu/ggtags][ggtags]] from MELPA. and global(gtags) and ctags for your os.
@@ -542,3 +531,4 @@ new one (which shows the same information).
 #+BEGIN_SRC emacs-lisp
 (global-set-key (kbd "C-ط خ") 'other-window)
 #+END_SRC
+
